@@ -1,0 +1,41 @@
+
+<div class="background-pic">
+  <div class="login-box">
+  <h2>Données personnelles</h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <div class="user-box">
+      <input type="text" formControlName="firstName" required="">
+      <label>Nom</label>
+    </div>
+
+    <div class="user-box">
+      <input type="text"  formControlName="lastName" required="">
+      <label>Prénom</label>
+    </div>
+    
+    <div class="user-box">
+      <input type="email" formControlName="email" required="">
+      <label>Email</label>
+    </div>
+    
+    <div class="user-box">
+      <input type="number" formControlName="code_carte" required="">
+      <label>Code de carte</label>
+    </div>
+    
+    <div class="user-box">
+      <input type="number" formControlName="quantite" required="">
+      <label>Quantité</label>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <span >
+        <button type="reset" style="--c:#E95A49;">Annuler</button>
+        <button style="margin-right: 10px; float: right;" type="submit">Envoyer</button>
+      </span>
+  </div>
+  </div>
+  </form>
+</div>
+</div>
